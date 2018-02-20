@@ -6,12 +6,12 @@ Ce lab a pour but de présenter les nouveautés de Java 8.
 Le changement le plus important dans Java 8.
 
 ```java
-List<String> names = Arrays.asList("peter", "anna", "mike", "xenia");
+List<String> listString = Arrays.asList("A", "B", "C");
 
-Collections.sort(names, new Comparator<String>() {
+Collections.sort(listString, new Comparator<String>() {
     @Override
     public int compare(String a, String b) {
-        return b.compareTo(a);
+        return a.compareTo(b);
     }
 });
 ```
@@ -19,21 +19,21 @@ Collections.sort(names, new Comparator<String>() {
 Avec les lambda, cela devient plus simple
 
 ```java
-Collections.sort(names, (String a, String b) -> {
-    return b.compareTo(a);
+Collections.sort(listString, (String a, String b) -> {
+    return a.compareTo(b);
 });
 ```
 
 ou encore
 
 ```java
-Collections.sort(names, (String a, String b) -> b.compareTo(a));
+Collections.sort(listString, (String a, String b) -> a.compareTo(b));
 ```
 
 encore plus
 
 ```java
-names.sort((a, b) -> b.compareTo(a));
+listString.sort((a, b) -> a.compareTo(b));
 ```
 
 ## Interfaces fonctionnelles
