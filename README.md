@@ -1,6 +1,6 @@
 ## Introduction
 
-Ce lab a pour but de présenter les nouveautés de Java 8.
+Ce lab a pour objectif de présenter les nouveautés de Java 8.
 
 ## Optionals
 Optional est une classe utilitaire fournissant des méthodes pour mieux gérer les valeurs null. Cela permet une meilleure gestion des NullPointerException.
@@ -39,9 +39,19 @@ Name value : Java8
 Hello Java8
 ```
 
-* La méthode `isPresent()` retourne `true` si la veleur existe, `false` sinon.
+* La méthode `isPresent()` retourne `true` si la valeur existe, `false` sinon.
 * La méthode `orElseGet()` permet de retourner une valeur par défaut en cas de valeur null. Elle permet de définir une lambda expression comme fonction de fallback en cas de valeur null.
 * La méthode `orElse()` retourne la valeur par défaut en cas de valeur null, sans fonction de fallback.
+
+## Interfaces fonctionnelles
+Annotation `@FunctionalInterface`
+Une interface avec une seule méthode
+
+### Méthodes d'interfaces
+
+### Méthodes statiques 
+
+### Méthodes par défaut
 
 ## Expressions Lambdas
 Le changement le plus important dans Java 8.
@@ -65,29 +75,50 @@ Collections.sort(listString, (String a, String b) -> {
 });
 ```
 
-ou encore
+Ou encore
 
 ```java
 Collections.sort(listString, (String a, String b) -> a.compareTo(b));
 ```
 
-encore plus
+Et encore plus simple
 
 ```java
 listString.sort((a, b) -> a.compareTo(b));
 ```
 
-et le résultat
+Pour le résultat
 ```java
 [A, B, C]
 ```
 
-## Interfaces fonctionnelles
-Annotation `@FunctionalInterface`
-Une interface avec une seule méthode
+:thumbsup:
+> Comme best practice TODO
 
-## Méthodes d'interfaces
+### Scopes
+#### Variables locales
+#### Champs et variables statiques
+#### Méthode par défaut des interfaces
 
-## Méthodes statiques 
 
-## Méthodes par défaut
+## Streams
+* Filter
+* Sorted
+* Map
+* Match
+* Count
+* Reduce
+
+:thumbsup:
+> Comme best practice TODO
+
+### Streams parallèles
+
+## Dates
+
+:thumbsup:
+> Comme best practice TODO
+
+## Annotation
+
+## Autres
