@@ -67,5 +67,9 @@ public class Lambda {
         listString = Arrays.asList( "C", "B", "A" );
         listString.sort((a, b) -> a.compareTo(b));
         System.out.println("Liste triée 4 : " + listString);
+
+        //Tri inversé
+        listString.sort(Collections.reverseOrder());
+        System.out.println("Liste triée à l'inverse 5 : " + listString);
     }
 }

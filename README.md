@@ -36,6 +36,11 @@ encore plus
 listString.sort((a, b) -> a.compareTo(b));
 ```
 
+et le résultat
+```java
+[A, B, C]
+```
+
 ## Interfaces fonctionnelles
 Annotation `@FunctionalInterface`
 Une interface avec une seule méthode
