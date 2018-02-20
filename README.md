@@ -39,9 +39,9 @@ Name value : Java8
 Hello Java8
 ```
 
-La méthode `isPresent()` retourne `true` si la veleur existe, `false` sinon.
-La méthode `orElseGet()` permet de retourner une valeur par défaut en cas de valeur null. Elle permet de définir une lambda expression comme fonction de fallback en cas de valeur null.
-La méthode `orElse()` retourne la valeur par défaut en cas de valeur null, sans fonction de fallback.
+* La méthode `isPresent()` retourne `true` si la veleur existe, `false` sinon.
+* La méthode `orElseGet()` permet de retourner une valeur par défaut en cas de valeur null. Elle permet de définir une lambda expression comme fonction de fallback en cas de valeur null.
+* La méthode `orElse()` retourne la valeur par défaut en cas de valeur null, sans fonction de fallback.
 
 ## Expressions Lambdas
 Le changement le plus important dans Java 8.
