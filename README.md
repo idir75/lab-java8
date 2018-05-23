@@ -92,7 +92,6 @@ Pour le résultat
 [A, B, C]
 ```
 
-:thumbsup:
 > Comme best practice TODO
 
 ### Scopes
@@ -109,14 +108,12 @@ Pour le résultat
 * Count
 * Reduce
 
-:thumbsup:
 > Comme best practice TODO
 
 ### Streams parallèles
 
 ## Dates
 
-:thumbsup:
 > Comme best practice TODO
 
 ## Annotation
